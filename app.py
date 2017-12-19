@@ -14,6 +14,7 @@ from rmon.models import db
 
 app = create_app()
 
+
 @app.cli.command()
 def routes():
     """输出app中定义的所有路由"""
@@ -26,6 +27,7 @@ def routes():
 
     for line in sorted(output):
         print(line)
+
 
 @app.cli.command()
 def init_db():

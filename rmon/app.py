@@ -33,6 +33,8 @@ def create_app():
 
     # 注册Blueprint
     app.register_blueprint(api)
+    # 初始化数据库
+    db.init_app(app)
     # 如果是开发环境则创建所有数据库表
     if app.debug:
         with app.app_context():
