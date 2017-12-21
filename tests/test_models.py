@@ -38,7 +38,7 @@ class TestServer:
         Server.ping 方法执行失败时，会抛出 RestException
         """
         # 没有 Redis 服务器监听在 127.0.0.1:6399 地址, 所以将访问失败
-        server = Server(name='test', host='127.0.0.1', port='6399')
+        server = Server(name='test', host='127.0.0.1', port=6399)
         try:
             server.ping()
         except RestException as e:
