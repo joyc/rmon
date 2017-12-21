@@ -101,7 +101,7 @@ class ServerSchema(Schema):
             raise ValidationError('Redis server already exist', 'name')
 
     @post_load
-    def create_or_update(self, date):
+    def create_or_update(self, data):
         """数据加载成功后自动创建Server对象"""
         instance = self.context.get('instance', None)
 
