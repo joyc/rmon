@@ -9,6 +9,8 @@ from flask import request, make_response
 from flask.json import dumps
 from flask.views import MethodView
 
+from werkzeug.wrappers import Response
+
 
 class RestView(MethodView):
     """自定义View类

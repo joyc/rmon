@@ -2,9 +2,9 @@
 # -*- coding:utf-8 -*-
 # @Time    : 2017/12/19/0017 23:52
 # @Author  : Hython.com
-# @File    : urls.py
+# @File    : server.py
 """rmon.views.server
-定义了
+实现了所有的视图控制器
 """
 from flask import request, g
 
